@@ -1,0 +1,24 @@
+git pull upstream // Pull from the root branch that a repository has been forked from. This enables me to update my forked repository with potential changes from the master if we have not gone entirely different directions in our development.
+
+
+I need to make sure that my contributions are associated with my github account (No more false attribution to Golan.)
+
+
+fork on the website
+git clone [url]
+git pull
+make changes
+git add .
+git commit -m "message"
+git push
+git pull
+
+git branch  // Displays list of local branches on my machine.
+git branch branch_name // Creates the given named branch.
+git checkout branch_name // Switches my local machine to the given local branch
+git checkout -b branch_name // Creates a new branch then switches to it.
+
+// Creates a remote counterpart to my local branch and sets up the relevant pull and push.
+// information for future use. remote-name is usually called origin, but it could be.
+// different on a different system.
+git push -u <remote-name> <local-branch-name>

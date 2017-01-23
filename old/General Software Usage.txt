@@ -1,0 +1,2 @@
+When using google chrome, use f11 to exit full screen mode.
+use Ctrl + Shift + I

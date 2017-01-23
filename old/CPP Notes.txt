@@ -1,0 +1,83 @@
+Make sure class definitions are enclosed with braces.
+Put a semicolon at the end of the declaraction.
+
+Make sure every typed function has a return statement, otherwise the program will have very strange behavior, such as crashing the return and the calling function.
+
+class Name
+{
+
+	public:
+	protected:
+	private:
+
+}; // Semi colon is very important.
+
+Every function that implements a method in a class must list the class name.
+
+"auto" can be used to automatically infer types.
+
+We cannot pass Abstract types directly, they must be passed by reference of using pointers.
+
+
+When there are small mysterious errors when trying to get a framework working, try downloading checking the check sum and finishing the instructions exactly again.
+
+
+// Good iteration syntax.
+// iteration over a collection.
+for (auto iter = collection.begin(); iter != collection.end(); ++iter)
+{
+	/* Code ... */
+
+	Elem e = *iter;
+}
+
+
+// If a program never prints out an endline, then it might never print anything.
+cout << "String" << endl;
+
+Be very careful when passing things by value, if passing by reference was intended, then some unneccesary copying could occur.
+
+Compilation systems such as the code blocks system sometimes do not compile the code if it is unreachable by the main execution path.
+
+
+Always route the include paths correctly.
+
+When it appears that the source code is not being found, then make sure the src file is in your make file and/or ide set of src files being built.
+
+Always sanity check the whole way through a pipeline. Make sure to test the actual result returned to the user.
+
+When something goes wrong with a numerical application check for nans being produced in the floating point numbers.
+
+Make sure to actually read the code to determine what it does. If I think it is a library like open frameworks that is at fault, then I should consider rereading my code and making sure everything is working correctly first.
+
+The compiler will not recognize the name of a class if it takes a parameterized type and none is supplied, inheritance should function like java.
+
+use the word typename to specify nested types in the outputs of function 
+
+Templates can only be implemented in the header for genaric portability.specifications.
+
+
+If the compiler is giving you parsing errors regarding an enum, then the problem might be that one of the values in the enum has been defined previously in some framework, compiler, of library that you are using. in ofxbutterfly, I defined a value of PASCAL for pascal triangle subdivision, but minGWin had also defined PASCAL for the pascal programming language.
+
+
+It is important to iterate through the correct pixels in an image. < instead of <=.
+unsigned chars* representations of colors goes from 0 to 255, whereas float representation of colors is normalized from 0 to 1, which is convenient for algebraic light calculations. It is important to compue and convert indices correctly.
+
+When inside of a namespace, standard functions need a std:: prefix.
+When changing a header file seems to be compiling, but the new function definitions you have added don't seem to be linking, then it may be that one of your old partners built the library with duplicate header files in two different locations, therefore both header files need to be kept in synch. If you are reading this, then never do that. Whenever I see something like that I immediatly remove the duplication requirement. Only have code in one place, no duplicate code.
+
+Ambiguous new definition. This means that a function has the same name and arguments, but might mistakenly have the wrong returns type, so the compiler can't tell the difference.
+
+We use T foo(const T &input) const; to denote that the input won't be changed and the function doesn't change the internal variable associated with the object. This allows us to pass 'rValues', which are temporary as references, because the system then knows that they will not be changed and used as outputs.
+
+If a print stream object is not declared to take a const value, then temporary 'rValue' variable may be deallocated before being printed. This will cause undefined behavior. Make sure that you are fully aware that the declared .h functions and .cpp functions are the same. Use constant expressions.
+
+When in doubt about proper memory usage, use pointers instead of references. They are more likely to result in correct behavior.
+
+Often while I am programming, I will come up with a logical way of doing things and then be stumped when it doesn't seem to work. More often than not, my logic is actually correct, but some other nuance of the language is not or some small facet of it is wrong, but the overal idea actually does work.
+
+If you define a namespace inside of another namespace and they have the same type, bad things happen, watch out for excessive copy and pasting.
+
+When using visual studio, if it doesn not behave, then try modifying project files using a text editor, instead of visual studio.
+
+Beware pointers to nodes in a datastructure, because they will be invalidated when the datastructure resizes itself or reallocates its internal structured memory. Try using vectors of pointers to objects, instead of vectors of objects if correct links between objects are important.

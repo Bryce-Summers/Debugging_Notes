@@ -1,0 +1,1 @@
+If I am stuck on a problem for a long time, it is often more time effective to go program an elaborate visual debugging scheme. This allows me to feel meta progress, while also making it easier to solve the dificult problem.

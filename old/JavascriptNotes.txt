@@ -1,0 +1,23 @@
+A collection of useful Javascript information.
+Written by Bryce Summers.
+
+// The simple way to run a webserver using python on your local machine.
+// Run this command for python 3 in the root directory of the webpage.
+python -m http.server
+
+# Python 2.x
+python -m SimpleHTTPServer
+
+https://github.com/mrdoob/three.js/wiki/How-to-run-things-locally
+
+
+Always double check names, refractive_index != refraction_index.
+Also check scoping of variables.
+Watch out for silent undefined variables.
+
+When pushing variables onto arrays, always use array.push(0), instead of array.push[0]. Brackets will lead to undefined errors.
+
+If the problem escapes you, take a break, but look for simple things like 1's instead of 0's.
+
+If you ever find yourself wondering how a function could possibly be undefined, look to see whether you are shadowing its name with another declared variable.
+
