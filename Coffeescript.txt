@@ -1,0 +1,5 @@
+Coffeescript
+
+If the systems says 'unmatched OUTDENT' it probably means that I am missing a closing parentheses somewhere.
+
+If you are porting over from C++ and you see some mysterious functions made fro the compiler, then look for '->' pointers that haven't yet been ported to '.' dot references.

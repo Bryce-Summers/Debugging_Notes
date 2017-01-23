@@ -1,0 +1,4 @@
+C++ Development Tools.
+
+Evidently Microsoft Visual Studio doesn't like being installed away from the main drive on a computer.
+I had moved visual studio over to a new D: drive and it would not run any of my programs.

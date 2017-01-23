@@ -1,0 +1,26 @@
+javascript
+
+If you are setting a canvas's color style element, it will not work unless you pass it a string of the form 
+"#000000", you can't leave out any of the header zeros for any of the red, green, or blue values.
+
+//here is some working code for this:
+// #rrggbb (number)
+strokeColor(color)
+{
+    // Create a hex color string with the full 6 characters.
+    var str = "000000" + color.toString(16);
+    str = str.substr(-6);
+    this.ctx.strokeStyle = '#' + str;
+},
+
+// #rrggbb (number)
+fillColor(color)
+{
+    var str = "000000" + color.toString(16);
+    str = str.substr(-6);
+    this.ctx.fillStyle = '#' + str;
+},
+
+
+It is always prudent to test things, such as BVH's early and often, rather than trudgin through manual checking later.
+Always test everything possibl before hand.
