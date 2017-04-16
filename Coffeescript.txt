@@ -3,3 +3,14 @@ Coffeescript
 If the systems says 'unmatched OUTDENT' it probably means that I am missing a closing parentheses somewhere.
 
 If you are porting over from C++ and you see some mysterious functions made fro the compiler, then look for '->' pointers that haven't yet been ported to '.' dot references.
+
+If you are searching for a frankenbug that goes away when use use helper print statement, check to make sure you aren't accidently setting your equality chekcs '=='
+to assignments '='
+
+
+If you want to user 'let' syntax, for instance to iterate over a set, do this:
+// Instead of...
+for (let e of set)
+
+// Do
+set.forEach (e) =>

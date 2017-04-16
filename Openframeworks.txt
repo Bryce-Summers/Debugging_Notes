@@ -1,0 +1,3 @@
+If a shader isn't working, check the openframeworks spec for the type.
+
+for instance, I will often need to use sampler2DRect, instad of just sample2D

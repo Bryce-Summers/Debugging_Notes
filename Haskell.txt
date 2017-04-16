@@ -38,3 +38,12 @@ Types are upper case, variables are lower case. This is mandated by the compiler
 
 Good stuff about types and typeclasses.
 http://learnyouahaskell.com/making-our-own-types-and-typeclasses
+
+
+Neve write something of the form:
+f tokens
+let tokens = g tokens --because it is probably an unintentional shadowing that may lead to an equality check or contraint that may cause funky behavior.
+
+Always enclosed deconstructed function arguments in parens:
+
+f (a:b:c:[]), rather than f a:b:c:[]
